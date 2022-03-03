@@ -21,6 +21,7 @@ buildscript {
         core_ktx_version = "1.3.2"
         kotlin_version = "1.3.72"
         material_version = "1.2.1"
+        nav_version = "2.3.1"
     }
     repositories {
         google()
@@ -32,6 +33,8 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
     }
 }
 

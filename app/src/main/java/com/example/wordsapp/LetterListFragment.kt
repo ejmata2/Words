@@ -54,9 +54,9 @@ class LetterListFragment : Fragment() {
      */
     private fun chooseLayout() {
         if (isLinearLayoutManager) {
-            recyclerView.layoutManager = LinearLayoutManager(this)
+            recyclerView.layoutManager = LinearLayoutManager(this.requireContext())
         } else {
-            recyclerView.layoutManager = GridLayoutManager(this, 4)
+            recyclerView.layoutManager = GridLayoutManager(this.requireContext(), 4)
         }
         recyclerView.adapter = LetterAdapter()
     }
